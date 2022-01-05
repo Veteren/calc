@@ -12,8 +12,8 @@ $./calc <operation> <arg1> <arg2> <arg3> ...
 
 ### OPERATIONS
 
-+ | - | x | / 
----|---|---|---
++   | -        | x        | / 
+----|----------|----------|-------
 add | subtract | multiply | divide
 
 ### For Example
