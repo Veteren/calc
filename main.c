@@ -21,19 +21,23 @@ int main(int argc, char **argv)
   char *op = *argv++;
   if (strcmp(op, "help") == 0) {
     usage(stderr, program);
-	exit(1);
+	 exit(1);
   } else if (strcmp(op, "+") == 0) {
-	printf("result :%d\n", add(argv));
+	 printf("result :%d\n", add(argv));
   } else if (strcmp(op, "-") == 0) {
-    printf("result :%d\n", subtract(argv));
+	 printf("result :%d\n", subtract(argv));
   } else if (strcmp(op, "x") == 0) {
-    printf("result :%d\n", multiply(argv));
+	 printf("result :%d\n", multiply(argv));
   } else if (strcmp(op, "/") == 0) {
-    printf("result :%.2f\n", divide(argv));
+	 printf("result :%.2f\n", divide(argv));
   } else {
-	fprintf(stderr, "ERROR: unknown operation %s\n", op);
-	exit(1);
+	 fprintf(stderr, "ERROR: unknown operation %s\n", op);
+	 usage(stderr, program)
+	 exit(1);
   }
+
+
   
+
   return 0;
 }
